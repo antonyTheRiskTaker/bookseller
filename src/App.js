@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+// import './App.css';
+
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
+// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+
+import Home from './screens/Home';
+import Books from './screens/Books';
+
+import BreadcrumbDemo from './components/BreadcrumbDemo';
+import CardDemo from './components/CardDemo';
+import FormDemo from './components/FormDemo';
+import HomeNavbar from './components/HomeNavbar';
+// import BooksellerRoutes from './components/BooksellerRoutes';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <HomeNavbar />
       </header>
+      <Container>
+        <FormDemo />
+        <CardDemo />
+        <BreadcrumbDemo />
+        <Button>Test</Button>
+      </Container>
+      {/* <BooksellerRoutes /> (modularise this part if possible) */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/books' element={<Books />} />
+        <Route />
+        <Route />
+        <Route />
+      </Routes>
+      {/* Each screen will have its own <main> element */}
+      {/* (Line below) the footer stays here */}
+      {/* <footer></footer> */}
     </div>
   );
 }
