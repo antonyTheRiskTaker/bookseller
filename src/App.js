@@ -13,6 +13,7 @@ import BreadcrumbDemo from './components/BreadcrumbDemo';
 import CardDemo from './components/CardDemo';
 import FormDemo from './components/FormDemo';
 import HomeNavbar from './components/HomeNavbar';
+import Footer from './components/Footer';
 // import BooksellerRoutes from './components/BooksellerRoutes';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
       </Routes>
       {/* Each screen will have its own <main> element */}
       {/* (Line below) the footer stays here */}
-      {/* <footer></footer> */}
+      <Footer />
     </div>
   );
 }
