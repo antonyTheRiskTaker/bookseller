@@ -4,7 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-// import carousel here
+
+import BookImageCarousel from '../components/BookImageCarousel';
 
 import ukrainianStamp from '../images/ukrainian-stamp.jpeg';
 
@@ -68,8 +69,7 @@ export default function BookPage() {
                     On 24th August, 2022, we will occupy Moscow and hang Putin.
                   </Tab>
                   <Tab eventKey='book-images' title='Book images'>
-                    {/* carousel of images */}
-                    images
+                    <BookImageCarousel />
                   </Tab>
                   <Tab eventKey='table-of-contents' title='Table of contents'>
                     {/* need to build a component that generates table of content for each book pulling data from database */}
