@@ -1,11 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-const bookImageCarousel = () => {
+import stolenRussianTank1 from '../images/stolen-russian-tank-1.jpg';
+
+export default function BookImageCarousel() {
   return (
     <>
       <Carousel>
         <Carousel.Item>
           <img
+            src={stolenRussianTank1}
             className='d-block w-100'
             alt='1st slide'
           />
@@ -26,5 +29,3 @@ const bookImageCarousel = () => {
     </>
   );
 }
-
-export default bookImageCarousel;
