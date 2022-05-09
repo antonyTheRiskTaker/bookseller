@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './screens/Home';
 import Books from './screens/Books';
+import BookPage from './screens/BookPage';
 
 // import BreadcrumbDemo from './components/BreadcrumbDemo';
 // import CardDemo from './components/CardDemo';
@@ -31,7 +32,7 @@ function App() {
       {/* <BooksellerRoutes /> (modularise this part if possible) */}
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/books' element={<Books />} />
+        <Route path='/books' element={<BookPage />} />
         <Route />
         <Route />
         <Route />
